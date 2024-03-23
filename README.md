@@ -11,9 +11,9 @@ Offers various options for adjusting step sizes, such as exponential decay, inve
 
 The program consists of the following components:
 
-- `main.cpp`: Contains the main function where the optimization process is initiated.
+- `main.cpp`: This file defines the objective function and its gradient, reads the input parameters from a JSON file, and executes the optimization function.
 - `utils.h`: Header file containing utility functions and data structures.
-- `gradient_method.h`: Header file containing implementations of gradient descent methods.
+- `gradient_method.h`: Header file containing implementations of gradient descent methods and alpha methods.
 
 ## Objective Function
 
