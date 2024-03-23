@@ -22,11 +22,11 @@ The program consists of the following components:
 The specific objective function and its gradient for which optimization is performed are defined in `main.cpp`. By default, the objective function \( f(x) \) is set to:
 
 \[
-f(x) = x_1 \cdot x_2 + 4 \cdot x_1^4 + x_2^2 + 3 \cdot x_1
+'f(x) = x_1 \cdot x_2 + 4 \cdot x_1^4 + x_2^2 + 3 \cdot x_1'
 \]
 
 Where:
-\( x_1 \) and \( x_2 \) are the input variables.
+$'( x_1 )'$ and $'( x_2 )'$ are the input variables.
 
 Users can modify these functions in `main.cpp` according to their optimization problem.
 
