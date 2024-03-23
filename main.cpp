@@ -49,6 +49,9 @@ int main() {
     } else if (data.alpha_method == INVERSE_DECAY) {
         std::cout << "Selected method: Inverse Decay" << std::endl;
         x_min = gradient_method(f, grad_f, data, inverse_decay);
+    } else {
+        std::cerr << "Error: alpha method not valid" << std::endl;
+        return 1;
     }
 
     // Output the optimal point and the value of the objective function at that point
