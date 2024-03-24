@@ -32,7 +32,7 @@ Users can modify these functions in `main.cpp` according to their optimization p
 
 ## Usage
 
-1. Clone the repository:
+1. Clone the repository.
 2. Modify the LIB_ROOT variable in the Makefile.
 3. Adjust the data.json file with your desired parameters.
 4. Compile and execute the program:
