@@ -15,7 +15,6 @@ The program consists of the following components:
 - `utils.h`: Header file containing utility functions and data structures.
 - `gradient_method.h`: Header file containing implementations of gradient descent methods and alpha methods.
 
-## Objective Function
 
 ## Objective Function and Gradient
 
