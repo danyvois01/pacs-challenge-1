@@ -12,7 +12,7 @@ std::vector<double> gradient_method(const Function& f, const Gradient& grad_f, c
         double alpha = alpha_strategy(f, x, grad, data, k); // Compute step size
         std::vector<double> x_new = x - grad * alpha; // Update x using gradient and step size
         // Check convergence criteria
-        converged = std::abs(f(x_new) - f(x)) < data.epsilon_residual
+        converged = vector_norm(grad_f(x)) < data.epsilon_residual
                     || vector_norm(x_new - x) < data.epsilon_step;
         x = x_new; // Update x for next iteration
         if (converged)
