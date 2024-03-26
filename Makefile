@@ -1,4 +1,4 @@
-LIB_ROOT = ../pacs-examples/Examples
+LIB_ROOT = ../../pacs-examples/Examples
 
 CXX      ?= g++
 CXXFLAGS ?= -std=c++20
