@@ -2,7 +2,8 @@
 #define ASSIGNMENT_1_GRADIENT_METHOD_H
 
 #include "utils.h"
-
+//@note use .hpp or .H for c++ header file. Using .h is not recommended, even if not wrong. The reason is that if you mix C and C++ in your code you
+//want to be able to understand if a header file is C pr C++ by just looking at the extension.
 // Function to perform gradient descent optimization
 std::vector<double> gradient_method(const Function& f, const Gradient& grad_f, const Data& data, const AlphaStrategy& alpha_strategy) {
     bool converged = false;
