@@ -8,6 +8,7 @@
 
 // Struct to hold optimization data
 struct Data {
+    //@note initialize the variables in the struct. You have a default and you avoid the risk of an uninitialized variable
     double epsilon_residual; // Tolerance for residual
     double epsilon_step;     // Tolerance for step
     double alpha_0;          // Initial step size
@@ -19,6 +20,7 @@ struct Data {
 };
 
 // Typedefs for function types
+//@note good. But prefer the using statement to typedef. The using statement is more readable and is the modern way to define aliases
 typedef std::function<double(const std::vector<double>&)> Function;
 typedef std::function<std::vector<double>(const std::vector<double>&)> Gradient;
 typedef std::function<double(const Function&, const std::vector<double>&, const std::vector<double>&, const Data&, int)> AlphaStrategy;
