@@ -1,7 +1,7 @@
-#ifndef ASSIGNMENT_1_GRADIENT_METHOD_H
-#define ASSIGNMENT_1_GRADIENT_METHOD_H
+#ifndef ASSIGNMENT_1_GRADIENT_METHOD_HPP
+#define ASSIGNMENT_1_GRADIENT_METHOD_HPP
 
-#include "utils.h"
+#include "utils.hpp"
 
 // Function to perform gradient descent optimization
 std::vector<double> gradient_method(const Function& f, const Gradient& grad_f, const Data& data, const AlphaStrategy& alpha_strategy) {
@@ -49,4 +49,4 @@ double inverse_decay(const Function & f, const std::vector<double>& x, const std
     return data.alpha_0 / (1 + data.mu * k); // Compute step size using inverse decay
 }
 
-#endif // ASSIGNMENT_1_GRADIENT_METHOD_H
+#endif // ASSIGNMENT_1_GRADIENT_METHOD_HPP

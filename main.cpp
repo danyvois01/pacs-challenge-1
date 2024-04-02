@@ -5,21 +5,12 @@
 
 #include "json.hpp" // JSON library
 
-#include "utils.h" // Utility functions and data structures
-#include "gradient_method.h" // Gradient descent optimization functions
+#include "utils.hpp" // Utility functions and data structures
+#include "gradient_method.hpp" // Gradient descent optimization functions
 
 using json = nlohmann::json;
 
 int main() {
-    // Define the objective function
-    Function f = [](const std::vector<double>& x) {
-        return x[0] * x[1] + 4 * pow(x[0], 4) + pow(x[1], 2) + 3 * x[0];
-    };
-
-    // Define the gradient of the objective function
-    Gradient grad_f = [](const std::vector<double>& x) {
-        return std::vector<double>{x[1] + 16*pow(x[0], 3) + 3, x[0] + 2*x[1]};
-    };
 
     // Read parameters from JSON file
     std::ifstream file("data.json");
