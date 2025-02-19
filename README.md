@@ -1,6 +1,6 @@
-# pacs-challenge-1
+# A gradient method for the minimization of a multivariate functions
 
-## A gradient method for the minimization of a multivariate functions
+## pacs-challenge-1
 
 This repository hosts the first assignment of the APSC course 2023-2024.
 The C++ program implements gradient descent optimization techniques to find the minimum of a given function.
